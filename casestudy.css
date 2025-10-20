@@ -1,0 +1,41 @@
+.calculator {
+  width: 250px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+#display {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px; 
+  box-sizing: border-box; /* A good practice to include */
+  text-align: right; /* Makes it look more like a calculator */
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e0e0e0; /* Added a default color */
+  transition: background-color 0.1s;
+}
+button:hover {
+  background-color: #f0f0f0;
+}
+/* Optional: Style for the equals and clear buttons */
+.equals-button {
+    grid-column: span 1;
+    background-color: #4CAF50;
+    color: white;
+}
+.equals-button:hover {
+    background-color: #45a049;
+}
